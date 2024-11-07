@@ -1,0 +1,115 @@
+---
+title: R Example
+format: live-html
+engine: knitr
+webr:
+  packages:
+    - tidyverse
+
+---
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+::: {.callout-tip collapse="true" title="Week 1 Workshop"}
+
+<iframe src="Week1_introduction.pdf" width="100%" height="500px"></iframe>
+:::
+
+::: {.callout-tip collapse="true" title="Week 1 Workshop"}
+
+<iframe src="WEEK1_workshop.pdf" width="100%" height="500px"></iframe>
+:::
+
+Some of the materials for **Week 1 Workshop** can be run here. This provide an interactive playground to try out your code. 
+
+::: {.callout-important}
+You will still be expected to download the workshop files each week, and run them 
+in the workshops. The aim of this interactive environment is get you started with coding in R, and improve your familiarity.  You are not expected to memorise any of the code syntax, the aim is to improve your confidence.
+:::
+
+
+The `tidyverse` package has been loaded in this environment. It consists of many different packages. We will only be using ggplot2 here:
+
+* ggplot2 - charts and plots
+* dplyr - chaining data manipulation (filtering, mutation, reshaping)
+* tibble - for effective data tables
+* tidyr - helpful functions for cleaning data
+* readr - functions for reading and writing data
+* purrr - functional programming tools
+* stringr - for manipulating text and character strings
+* forcats - for dealing with categorical or ordinal data (factors)
+
+Summarize, data. The data `mtcars` is available in the base version of R.
+
+```{webr}
+summary(mtcars)
+```
+
+# Including Plots
+
+You can also embed plots, for example:
+
+```{webr}
+ggplot(mtcars, aes(x = disp, y = mpg)) +
+  geom_point()
+```
+
+## Your first plot
+
+Look at the data - the mpg dataset is included in R:
+
+```{webr}
+mpg
+```
+
+Create a simple plot:
+
+```{webr}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy))
+```
+
+**EXERCISE:** Look at some summary statistics. What function will you use on the mpg data to do this?
+
+```{webr}
+#| setup: true
+#| exercise: ex_2
+```
+
+```{webr}
+#| exercise: ex_2
+
+```
+
+
+Plot using colour by `cty`:
+
+```{webr}
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, color = cty))
+```
+
+**EXERCISE:** Color the points by the `class` variable.
+
+```{webr}
+#| setup: true
+#| exercise: ex_1
+```
+
+```{webr}
+#| exercise: ex_1
+
+```
+::: { .hint exercise="ex_1"}
+::: { .callout-note collapse="false"}
+## Hint 1
+
+Copy and paste the previous code which colours by 'cty'. What change do you need to make?
+
+```{webr}
+#| exercise: ex_1
+ggplot(data = mpg) +
+  geom_point(mapping = aes(x = displ, y = hwy, color = _______))
+```
+
+:::
+:::
