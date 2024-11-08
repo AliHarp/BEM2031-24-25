@@ -9,22 +9,46 @@ website:
   repo-url: https://github.com/AliHarp/BEM2031-24-25
   repo-actions: [edit, issue]
   page-navigation: true
+  page-footer:
+    left:  |
+      [University of Exeter](https://www.exeter.ac.uk/study/studyinformation/modules/info/?moduleCode=BEM2031&ay=2024/5&sys=0)
+    center:     
+      - text: "License"
+        href: quarto_2024_25/license.qmd
+    right:
+      - icon: github
+        href: https://github.com/AliHarp/BEM2031-24-25
   navbar:
     logo: "quarto_2024_25/images/bulb2.png"
     left:
       - href: index.qmd
-        text: Home
+        text: Welcome
       - about.qmd
-      - text: Lecture slides
-        menu:
-          - text: Lecture Slides Week 1
+  sidebar:
+    style: "floating"
+    background: "#d7ebf5"
+    alignment: center
+    collapse-level: 1
+    contents:
+      - text: "MODULE MATERIALS"
+      - section: "Lecture slides"
+        contents: 
+          - quarto_2024_25/Weekly_lectures/L1.qmd
+          - quarto_2024_25/Weekly_lectures/L2.qmd
+          - quarto_2024_25/Weekly_lectures/L3.qmd
+          - quarto_2024_25/Weekly_lectures/L4.qmd
+          - quarto_2024_25/Weekly_lectures/L5.qmd
+      - section: "Workshop output files"
+        contents:
+          - quarto_2024_25/Weekly_seminars/S1.qmd
+          - quarto_2024_25/Weekly_seminars/live_q.qmd
+
+      - section: "Workshop interactive code"
+        contents:
+          - quarto_2024_25/Weekly_seminars/live_q.qmd
 
 
 
-
-    right:
-    - text: "License"
-      href: quarto_2024_25/license.qmd
 
 
 

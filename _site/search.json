@@ -1,145 +1,5 @@
 [
   {
-    "objectID": "quarto_2025_25/license.html",
-    "href": "quarto_2025_25/license.html",
-    "title": "Open License",
-    "section": "",
-    "text": "MIT License\nCopyright (c) 2025 AliHarp\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L3.html",
-    "href": "quarto_2025_25/Weekly_lectures/L3.html",
-    "title": "Lecture 3",
-    "section": "",
-    "text": "Lecture 3 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L1.html",
-    "href": "quarto_2025_25/Weekly_lectures/L1.html",
-    "title": "Lecture 1",
-    "section": "",
-    "text": "Lecture 1 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L4.html",
-    "href": "quarto_2025_25/Weekly_lectures/L4.html",
-    "title": "Lecture 4",
-    "section": "",
-    "text": "Lecture 4 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L9.html",
-    "href": "quarto_2025_25/Weekly_lectures/L9.html",
-    "title": "Lecture 9",
-    "section": "",
-    "text": "Lecture 9 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L2.html",
-    "href": "quarto_2025_25/Weekly_lectures/L2.html",
-    "title": "Lecture 2",
-    "section": "",
-    "text": "Lecture 2 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_seminars/S2.html",
-    "href": "quarto_2025_25/Weekly_seminars/S2.html",
-    "title": "Week 2 Seminar",
-    "section": "",
-    "text": "Seminar 2 materials for 2023_2024: Introduction"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_seminars/S1.html",
-    "href": "quarto_2025_25/Weekly_seminars/S1.html",
-    "title": "Week 1 Seminar",
-    "section": "",
-    "text": "Seminar 1 materials for 2023_2024: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1 materials for 2023_2024: Workshop"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "Module Handbook 2024-25",
-    "section": "",
-    "text": "Note"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "BEM2031 2025-2026",
-    "section": "",
-    "text": "This handbook contains all the materials for BEM2031 2024-25.\nHere is the timetable for the term:"
-  },
-  {
-    "objectID": "quarto_2025_25/myproject.html",
-    "href": "quarto_2025_25/myproject.html",
-    "title": "myproject",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "quarto_2025_25/myproject.html#quarto",
-    "href": "quarto_2025_25/myproject.html#quarto",
-    "title": "myproject",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_seminars/live_q.html",
-    "href": "quarto_2025_25/Weekly_seminars/live_q.html",
-    "title": "R Example",
-    "section": "",
-    "text": "Week 1 Workshop\nSome of the materials for Week 1 Workshop can be run here. This provide an interactive playground to try out your code.\nThe tidyverse package has been loaded in this environment. It consists of many different packages. We will only be using ggplot2 here:\nSummarize, data. The data mtcars is available in the base version of R."
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_seminars/live_q.html#your-first-plot",
-    "href": "quarto_2025_25/Weekly_seminars/live_q.html#your-first-plot",
-    "title": "R Example",
-    "section": "Your first plot",
-    "text": "Your first plot\nLook at the data - the mpg dataset is included in R:\n\n\n\n\n\n\n\n\nCreate a simple plot:\n\n\n\n\n\n\n\n\nEXERCISE: Look at some summary statistics. What function will you use on the mpg data to do this?\n\n\n\n\n\n\n\n\n\n\n\nPlot using colour by cty:\n\n\n\n\n\n\n\n\nEXERCISE: Color the points by the class variable.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\n\n\n\nCopy and paste the previous code which colours by ‘cty’. What change do you need to make?"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L5.html",
-    "href": "quarto_2025_25/Weekly_lectures/L5.html",
-    "title": "Lecture 5",
-    "section": "",
-    "text": "Lecture 5 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L8.html",
-    "href": "quarto_2025_25/Weekly_lectures/L8.html",
-    "title": "Lecture 8",
-    "section": "",
-    "text": "Lecture 8 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L7.html",
-    "href": "quarto_2025_25/Weekly_lectures/L7.html",
-    "title": "Lecture 7",
-    "section": "",
-    "text": "Lecture 7 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L11.html",
-    "href": "quarto_2025_25/Weekly_lectures/L11.html",
-    "title": "Lecture 11",
-    "section": "",
-    "text": "Lecture 11 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L6.html",
-    "href": "quarto_2025_25/Weekly_lectures/L6.html",
-    "title": "Lecture 6",
-    "section": "",
-    "text": "Lecture 1 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2025_25/Weekly_lectures/L10.html",
-    "href": "quarto_2025_25/Weekly_lectures/L10.html",
-    "title": "Lecture 10",
-    "section": "",
-    "text": "Lecture 10 materials for 2023_2024:"
-  },
-  {
     "objectID": "quarto_2024_25/license.html",
     "href": "quarto_2024_25/license.html",
     "title": "Open License",
@@ -151,21 +11,36 @@
     "href": "quarto_2024_25/Weekly_lectures/L3.html",
     "title": "Lecture 3",
     "section": "",
-    "text": "Lecture 3 materials for 2023_2024:"
+    "text": "Lecture 3 materials for 2023_2024:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 3"
+    ]
   },
   {
     "objectID": "quarto_2024_25/Weekly_lectures/L1.html",
     "href": "quarto_2024_25/Weekly_lectures/L1.html",
     "title": "Lecture 1",
     "section": "",
-    "text": "Lecture 1 materials for 2023_2024:"
+    "text": "Lecture 1 materials for 2023_2024:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 1"
+    ]
   },
   {
     "objectID": "quarto_2024_25/Weekly_lectures/L4.html",
     "href": "quarto_2024_25/Weekly_lectures/L4.html",
     "title": "Lecture 4",
     "section": "",
-    "text": "Lecture 4 materials for 2023_2024:"
+    "text": "Lecture 4 materials for 2023_2024:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 4"
+    ]
   },
   {
     "objectID": "quarto_2024_25/Weekly_lectures/L9.html",
@@ -179,7 +54,12 @@
     "href": "quarto_2024_25/Weekly_lectures/L2.html",
     "title": "Lecture 2",
     "section": "",
-    "text": "Lecture 2 materials for 2023_2024:"
+    "text": "Lecture 2 materials for 2023_2024:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 2"
+    ]
   },
   {
     "objectID": "quarto_2024_25/Weekly_seminars/S2.html",
@@ -193,7 +73,12 @@
     "href": "quarto_2024_25/Weekly_seminars/S1.html",
     "title": "Week 1 Seminar",
     "section": "",
-    "text": "Seminar 1 materials for 2023_2024: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1 materials for 2023_2024: Workshop"
+    "text": "Seminar 1 materials for 2023_2024: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1 materials for 2023_2024: Workshop",
+    "crumbs": [
+      "Welcome",
+      "Workshop output files",
+      "Week 1 Seminar"
+    ]
   },
   {
     "objectID": "quarto_2024_25/myproject.html",
@@ -214,21 +99,36 @@
     "href": "quarto_2024_25/Weekly_seminars/live_q.html",
     "title": "R Example",
     "section": "",
-    "text": "Week 1 Workshop\nSome of the materials for Week 1 Workshop can be run here. This provide an interactive playground to try out your code.\nThe tidyverse package has been loaded in this environment. It consists of many different packages. We will only be using ggplot2 here:\nSummarize, data. The data mtcars is available in the base version of R."
+    "text": "Week 1 Workshop\nSome of the materials for Week 1 Workshop can be run here. This provide an interactive playground to try out your code.\nThe tidyverse package has been loaded in this environment. It consists of many different packages. We will only be using ggplot2 here:\nSummarize, data. The data mtcars is available in the base version of R.",
+    "crumbs": [
+      "Welcome",
+      "Workshop output files",
+      "R Example"
+    ]
   },
   {
     "objectID": "quarto_2024_25/Weekly_seminars/live_q.html#your-first-plot",
     "href": "quarto_2024_25/Weekly_seminars/live_q.html#your-first-plot",
     "title": "R Example",
     "section": "Your first plot",
-    "text": "Your first plot\nLook at the data - the mpg dataset is included in R:\n\n\n\n\n\n\n\n\nCreate a simple plot:\n\n\n\n\n\n\n\n\nEXERCISE: Look at some summary statistics. What function will you use on the mpg data to do this?\n\n\n\n\n\n\n\n\n\n\n\nPlot using colour by cty:\n\n\n\n\n\n\n\n\nEXERCISE: Color the points by the class variable.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\n\n\n\nCopy and paste the previous code which colours by ‘cty’. What change do you need to make?"
+    "text": "Your first plot\nLook at the data - the mpg dataset is included in R:\n\n\n\n\n\n\n\n\nCreate a simple plot:\n\n\n\n\n\n\n\n\nEXERCISE: Look at some summary statistics. What function will you use on the mpg data to do this?\n\n\n\n\n\n\n\n\n\n\n\nPlot using colour by cty:\n\n\n\n\n\n\n\n\nEXERCISE: Color the points by the class variable.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\n\n\n\nCopy and paste the previous code which colours by ‘cty’. What change do you need to make?",
+    "crumbs": [
+      "Welcome",
+      "Workshop output files",
+      "R Example"
+    ]
   },
   {
     "objectID": "quarto_2024_25/Weekly_lectures/L5.html",
     "href": "quarto_2024_25/Weekly_lectures/L5.html",
     "title": "Lecture 5",
     "section": "",
-    "text": "Lecture 5 materials for 2023_2024:"
+    "text": "Lecture 5 materials for 2023_2024:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 5"
+    ]
   },
   {
     "objectID": "quarto_2024_25/Weekly_lectures/L8.html",
@@ -266,17 +166,10 @@
     "text": "Lecture 10 materials for 2023_2024:"
   },
   {
-    "objectID": "about.html#module-handbook-and-information",
-    "href": "about.html#module-handbook-and-information",
-    "title": "Module Handbook 2024-25",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BEM2031 2025-2026",
     "section": "",
-    "text": "Note"
-  },
-  {
-    "objectID": "about.html#module-handbook",
-    "href": "about.html#module-handbook",
-    "title": "Module Handbook 2024-25",
-    "section": "Module Handbook",
-    "text": "Module Handbook"
+    "text": "This handbook contains all the materials for BEM2031 2024-25.\nHere is the timetable for the term:"
   }
 ]
