@@ -1,7 +1,7 @@
 on:
-  workflow_dispatch:
   push:
     branches: main
+  workflow_dispatch:
 
 name: Quarto Publish
 
@@ -24,18 +24,10 @@ jobs:
 
       - name: Install R packages
         run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "ggplot2", "rmarkdown"))'
-        
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-          
-      - name: Install Jupyter
-        run: python3 -m pip install jupyter
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
-          target: quarto publish gh-pages
+          target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

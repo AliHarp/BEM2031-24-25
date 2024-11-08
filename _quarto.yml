@@ -1,11 +1,14 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   title: "BEM2031 materials for 2024-25"
+  image: "quarto_2024_25/images/welcome.png"
   favicon: "quarto_2024_25/images/bulb2.png"
   repo-url: https://github.com/AliHarp/BEM2031-24-25
   repo-actions: [edit, issue]
+  page-navigation: true
   navbar:
     logo: "quarto_2024_25/images/bulb2.png"
     left:
