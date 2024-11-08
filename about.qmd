@@ -1,9 +1,8 @@
 ---
-title: "About"
+title: "Module Handbook 2024-25"
 ---
 
-About this site
+## Module Handbook and information
 
-```{r}
-1 + 1
-```
+<embed src="quarto_2024_25/handbook.pdf" width="800px" height="2100px" />
+

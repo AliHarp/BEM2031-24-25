@@ -2,12 +2,33 @@ project:
   type: website
 
 website:
-  title: "BEM2031-24-25"
+  title: "BEM2031 materials for 2024-25"
+  favicon: "quarto_2024_25/images/bulb2.png"
+  repo-url: https://github.com/AliHarp/BEM2031-24-25
+  repo-actions: [edit, issue]
   navbar:
+    logo: "quarto_2024_25/images/bulb2.png"
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - text: Lecture slides
+        menu:
+          - text: Lecture Slides Week 1
+
+
+
+
+    right:
+    - text: "License"
+      href: quarto_2024_25/license.qmd
+
+
+
+
+
+
+
 
 format:
   html:
