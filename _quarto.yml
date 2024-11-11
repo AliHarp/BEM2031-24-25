@@ -5,7 +5,7 @@ project:
 website:
   title: "BEM2031 materials for 2024-25"
   image: "quarto_2024_25/images/welcome.png"
-  favicon: "quarto_2024_25/images/bulb2.png"
+  favicon: "quarto_2024_25/images/bulb3.png"
   repo-url: https://github.com/AliHarp/BEM2031-24-25
   repo-actions: [edit, issue]
   page-navigation: true
@@ -19,7 +19,7 @@ website:
       - icon: github
         href: https://github.com/AliHarp/BEM2031-24-25
   navbar:
-    logo: "quarto_2024_25/images/bulb2.png"
+    logo: "quarto_2024_25/images/bulb3.png"
     left:
       - href: index.qmd
         text: Welcome
