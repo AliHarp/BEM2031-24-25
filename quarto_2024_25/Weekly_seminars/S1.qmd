@@ -5,14 +5,14 @@ format: html
 editor: visual
 ---
 
-::: {.callout-tip title="Seminar 1 materials for 2023_2024: Introduction" collapse="true"}
-<iframe width="100%" height="800" src="Week1_introduction.pdf">
+::: {.callout-tip title="Seminar 1 materials for 2024_2025: Introduction" collapse="true"}
+<iframe width="100%" height="800" src="Week1_introduction.html">
 
 </iframe>
 :::
 
-::: {.callout-tip title="Seminar 1 materials for 2023_2024: Workshop" collapse="true"}
-<iframe width="100%" height="800" src="WEEK1_workshop.pdf">
+::: {.callout-tip title="Seminar 1 materials for 2024_2025: Workshop" collapse="true"}
+<iframe width="100%" height="800" src="Week_1_workshop.html">
 
 </iframe>
 :::

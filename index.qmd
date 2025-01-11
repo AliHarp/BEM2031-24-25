@@ -1,10 +1,12 @@
 ---
-title: "BEM2031 2025-2026"
+title: "BEM2031 2024-25"
 ---
 
 ![](quarto_2024_25/images/welcome.png){width="100%"}
 
-This handbook contains all the materials for BEM2031 2024-25.  
+This handbook contains all the materials for BEM2031 2024-25. 
+
+Please contact me if there are any issues, concerns, queries.
 
 Here is the timetable for the term:
 

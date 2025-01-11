@@ -3,9 +3,9 @@ project:
   output-dir: _site
 
 website:
-  title: "BEM2031 materials for 2024-25"
+  title: "BEM2031 2024-25"
   image: "quarto_2024_25/images/welcome.png"
-  favicon: "quarto_2024_25/images/bulb3.png"
+  favicon: "quarto_2024_25/images/bulb2.png"
   repo-url: https://github.com/AliHarp/BEM2031-24-25
   repo-actions: [edit, issue]
   page-navigation: true
@@ -34,14 +34,10 @@ website:
       - section: "Lecture slides"
         contents: 
           - quarto_2024_25/Weekly_lectures/L1.qmd
-          - quarto_2024_25/Weekly_lectures/L2.qmd
-          - quarto_2024_25/Weekly_lectures/L3.qmd
-          - quarto_2024_25/Weekly_lectures/L4.qmd
-          - quarto_2024_25/Weekly_lectures/L5.qmd
+
       - section: "Workshop output files"
         contents:
           - quarto_2024_25/Weekly_seminars/S1.qmd
-          - quarto_2024_25/Weekly_seminars/live_q.qmd
 
       - section: "Workshop interactive code"
         contents:

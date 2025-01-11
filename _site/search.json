@@ -73,7 +73,7 @@
     "href": "quarto_2024_25/Weekly_seminars/S1.html",
     "title": "Week 1 Seminar",
     "section": "",
-    "text": "Seminar 1 materials for 2023_2024: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1 materials for 2023_2024: Workshop",
+    "text": "Seminar 1 materials for 2024_2025: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1 materials for 2024_2025: Workshop",
     "crumbs": [
       "Welcome",
       "Workshop output files",
@@ -97,25 +97,25 @@
   {
     "objectID": "quarto_2024_25/Weekly_seminars/live_q.html",
     "href": "quarto_2024_25/Weekly_seminars/live_q.html",
-    "title": "R Example",
+    "title": "Week 1 practice",
     "section": "",
-    "text": "Week 1 Workshop\nSome of the materials for Week 1 Workshop can be run here. This provide an interactive playground to try out your code.\nThe tidyverse package has been loaded in this environment. It consists of many different packages. We will only be using ggplot2 here:\nSummarize, data. The data mtcars is available in the base version of R.",
+    "text": "Some of the materials for Week 1 Workshop can be run live here. This provide an interactive playground to try out your code.\nThe tidyverse package has been loaded in this environment. It consists of many different packages. We will only be using ggplot2 here:\nSummarise the data. The data mtcars is available in the base version of R. we can use the function summary to do this.",
     "crumbs": [
       "Welcome",
-      "Workshop output files",
-      "R Example"
+      "Workshop interactive code",
+      "Week 1 practice"
     ]
   },
   {
     "objectID": "quarto_2024_25/Weekly_seminars/live_q.html#your-first-plot",
     "href": "quarto_2024_25/Weekly_seminars/live_q.html#your-first-plot",
-    "title": "R Example",
+    "title": "Week 1 practice",
     "section": "Your first plot",
-    "text": "Your first plot\nLook at the data - the mpg dataset is included in R:\n\n\n\n\n\n\n\n\nCreate a simple plot:\n\n\n\n\n\n\n\n\nEXERCISE: Look at some summary statistics. What function will you use on the mpg data to do this?\n\n\n\n\n\n\n\n\n\n\n\nPlot using colour by cty:\n\n\n\n\n\n\n\n\nEXERCISE: Color the points by the class variable.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\n\n\n\nCopy and paste the previous code which colours by ‘cty’. What change do you need to make?",
+    "text": "Your first plot\nLets look at a different dataset - the mpg dataset is included in R:\n\n\n\n\n\n\n\n\nCreate a simple plot:\n\n\n\n\n\n\n\n\nEXERCISE: Look at some summary statistics. What function will you use on the mpg data to do this?\n\n\n\n\n\n\n\n\n\n\n\nPlot using colour by cty:\n\n\n\n\n\n\n\n\nEXERCISE: Color the points by the class variable.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\n\n\n\nCopy and paste the previous code which colours by ‘cty’. What change do you need to make?",
     "crumbs": [
       "Welcome",
-      "Workshop output files",
-      "R Example"
+      "Workshop interactive code",
+      "Week 1 practice"
     ]
   },
   {
@@ -168,8 +168,15 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "BEM2031 2025-2026",
+    "title": "BEM2031 2024-25",
     "section": "",
-    "text": "This handbook contains all the materials for BEM2031 2024-25.\nHere is the timetable for the term:"
+    "text": "This handbook contains all the materials for BEM2031 2024-25.\nPlease contact me if there are any issues, concerns, queries.\nHere is the timetable for the term:"
+  },
+  {
+    "objectID": "utility_code.html",
+    "href": "utility_code.html",
+    "title": "BEM2031 2024-25",
+    "section": "",
+    "text": "import aspose.pdf as ap\n\ndef convert_pdf_to_html(pdf_path, html_path):\n    # Open PDF document\n    document = ap.Document(pdf_path)\n    \n    # Save document in HTML format\n    save_options = ap.HtmlSaveOptions()\n    document.save(html_path, save_options)\n\n# Example usage\npdf_path = \"quarto_2024_25/handbook.pdf\"\nhtml_path = \"quarto_2024_25/handbook.html\"\nconvert_pdf_to_html(pdf_path, html_path)\n\nRuntimeError: Proxy error(TypeInitializationException): The type initializer for 'Gdip' threw an exception. ---&gt; DllNotFoundException: Unable to load shared library 'libgdiplus' or one of its dependencies. In order to help diagnose loading problems, consider setting the LD_DEBUG environment variable: liblibgdiplus: cannot open shared object file: No such file or directory"
   }
 ]

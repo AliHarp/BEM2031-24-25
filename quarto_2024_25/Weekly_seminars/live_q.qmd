@@ -1,5 +1,5 @@
 ---
-title: R Example
+title: Week 1 practice
 format: live-html
 engine: knitr
 webr:
@@ -9,17 +9,7 @@ webr:
 ---
 {{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
 
-::: {.callout-tip collapse="true" title="Week 1 Workshop"}
-
-<iframe src="Week1_introduction.pdf" width="100%" height="500px"></iframe>
-:::
-
-::: {.callout-tip collapse="true" title="Week 1 Workshop"}
-
-<iframe src="WEEK1_workshop.pdf" width="100%" height="500px"></iframe>
-:::
-
-Some of the materials for **Week 1 Workshop** can be run here. This provide an interactive playground to try out your code. 
+Some of the materials for **Week 1 Workshop** can be run live here. This provide an interactive playground to try out your code. 
 
 ::: {.callout-important}
 You will still be expected to download the workshop files each week, and run them 
@@ -38,7 +28,7 @@ The `tidyverse` package has been loaded in this environment. It consists of many
 * stringr - for manipulating text and character strings
 * forcats - for dealing with categorical or ordinal data (factors)
 
-Summarize, data. The data `mtcars` is available in the base version of R.
+Summarise the data. The data `mtcars` is available in the base version of R. we can use the function `summary` to do this.
 
 ```{webr}
 summary(mtcars)
@@ -55,7 +45,7 @@ ggplot(mtcars, aes(x = disp, y = mpg)) +
 
 ## Your first plot
 
-Look at the data - the mpg dataset is included in R:
+Lets look at a different dataset - the mpg dataset is included in R:
 
 ```{webr}
 mpg
@@ -106,7 +96,7 @@ ggplot(data = mpg) +
 Copy and paste the previous code which colours by 'cty'. What change do you need to make?
 
 ```{webr}
-#| exercise: ex_1
+#| exercise: ex_3
 ggplot(data = mpg) +
   geom_point(mapping = aes(x = displ, y = hwy, color = _______))
 ```
