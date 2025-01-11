@@ -1,7 +1,8 @@
 project:
   type: website
   output-dir: _site
-  execute:
+
+execute:
   freeze: auto 
 
 website:
