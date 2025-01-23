@@ -47,6 +47,7 @@ website:
       - section: "Workshop interactive code"
         contents:
           - quarto_2024_25/Live_code/live_q.qmd
+          - quarto_2024_25/Live_code/lv.qmd
 
 
 
