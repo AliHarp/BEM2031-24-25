@@ -1,0 +1,40 @@
+---
+title: Week 2 practice
+format: live-html
+engine: knitr
+webr:
+  packages:
+    - tidyverse
+---
+## Introducing distance and similarity
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+In **Week 2 Workshop** we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.
+
+We used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.
+
+Lets have a look at how the Levenshtein (lv) distance works.
+
+We need the library `stringdist` which I have installed for you.
+
+We can define our strings:
+
+```{webr}
+string1 <- "kitten"
+string2 <- "sitting"
+```
+
+Calculate the Levenshtein distance
+
+```{webr}
+lv <- stringdist(string1, string2, method="lv")
+```
+
+Print the result
+
+```{webr}
+print(paste("Levenshtein distance between", string1, "and", string2, "is:", lv))
+```
+
+Try changing the strings!
