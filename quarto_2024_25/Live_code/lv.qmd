@@ -4,7 +4,7 @@ format: live-html
 engine: knitr
 webr:
   packages:
-    - tidyverse
+    - stringdist
 ---
 ## Introducing distance and similarity
 
