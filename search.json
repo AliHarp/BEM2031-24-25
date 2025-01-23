@@ -84,14 +84,24 @@
     "href": "quarto_2024_25/Live_code/lv.html",
     "title": "Week 2 practice",
     "section": "",
-    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!"
+    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 2 practice"
+    ]
   },
   {
     "objectID": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
     "href": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
     "title": "Week 2 practice",
     "section": "",
-    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!"
+    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 2 practice"
+    ]
   },
   {
     "objectID": "quarto_2024_25/Live_code/live_q.html",
