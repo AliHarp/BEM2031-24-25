@@ -1,0 +1,61 @@
+---
+title: Week 3 practice
+format: live-html
+engine: knitr
+webr:
+  packages:
+    - ggplot2
+---
+## Visualisations
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+In **Week 3 Workshop** we are focusing on visualisations.
+
+We can visualise for exploration or for communication. Here is an example using some of the extra features in `ggplot2` to produce a plot that is well annotated with a meaningful title, labels, a legend, and a clean theme.  It uses the built-in dataset `mtcars`.
+
+Feel free to play around with the plot.  I have left an empty code chunk here for you to inspect aspects of the mtcars dataset (e.g. using `glimpse`, `head`, `str` etc) to help you.
+
+
+```{r}
+# inspect the built-in mtcars dataset
+```
+
+
+```{webr}
+# Create a scatter plot
+ggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) + #set the cyl column to a factor (category)
+  geom_point(size = 3, alpha = 0.7) +  # Add points with transparency and size
+  labs(
+    title = "Miles Per Gallon vs Horsepower",
+    x = "Horsepower",
+    y = "Miles per Gallon",
+    color = "Cylinders"
+  ) +
+  theme_minimal() +  # Use a clean theme
+  theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
+    axis.title = element_text(size = 12),
+    legend.position = "top"
+  )
+
+```
+
+Here is another way of looking at the data.
+
+Have a think what each of the plots are telling you, and the relative advantages of different plotting types. You can try others types as well. The code will reset when you refresh the website.
+
+Use the `ggplot` cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf
+
+```{r}
+
+# Create a boxplot of mpg vs. cyl
+boxplot(mpg ~ cyl, 
+        data = mtcars,
+        main = "Boxplot of Miles Per Gallon by Number of Cylinders",
+        xlab = "Number of Cylinders",
+        ylab = "Miles Per Gallon (mpg)",
+        col = c("lightpink", "lightgreen", "lightblue"))
+
+```
+

@@ -5,7 +5,7 @@ format: html
 editor: visual
 ---
 
-::: {.callout-tip title="Seminar 2 materials for 2024_2025: Data Cleaning" collapse="true"}
+::: {.callout-tip title="Seminar 3 materials for 2024_2025: Visualisations" collapse="true"}
 <iframe width="100%" height="800" src="week_03_data_visualization.html">
 
 </iframe>
