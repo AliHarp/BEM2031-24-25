@@ -17,7 +17,7 @@ We can visualise for exploration or for communication. Here is an example using 
 Feel free to play around with the plot.  I have left an empty code chunk here for you to inspect aspects of the mtcars dataset (e.g. using `glimpse`, `head`, `str` etc) to help you.
 
 
-```{r}
+```{webr}
 # inspect the built-in mtcars dataset
 ```
 
@@ -47,7 +47,7 @@ Have a think what each of the plots are telling you, and the relative advantages
 
 Use the `ggplot` cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf
 
-```{r}
+```{webr}
 
 # Create a boxplot of mpg vs. cyl
 boxplot(mpg ~ cyl, 
