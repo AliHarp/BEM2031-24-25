@@ -97,6 +97,30 @@
     ]
   },
   {
+    "objectID": "quarto_2024_25/Live_code/week3.html",
+    "href": "quarto_2024_25/Live_code/week3.html",
+    "title": "Week 3 practice",
+    "section": "",
+    "text": "In Week 3 Workshop we are focusing on visualisations.\nWe can visualise for exploration or for communication. Here is an example using some of the extra features in ggplot2 to produce a plot that is well annotated with a meaningful title, labels, a legend, and a clean theme. It uses the built-in dataset mtcars.\nFeel free to play around with the plot. I have left an empty code chunk here for you to inspect aspects of the mtcars dataset (e.g. using glimpse, head, str etc) to help you.\n\n# inspect the built-in mtcars dataset\n\n\n\n\n\n\n\n\n\nHere is another way of looking at the data.\nHave a think what each of the plots are telling you, and the relative advantages of different plotting types. You can try others types as well. The code will reset when you refresh the website.\nUse the ggplot cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf\n\n# Create a boxplot of mpg vs. cyl\nboxplot(mpg ~ cyl, \n        data = mtcars,\n        main = \"Boxplot of Miles Per Gallon by Number of Cylinders\",\n        xlab = \"Number of Cylinders\",\n        ylab = \"Miles Per Gallon (mpg)\",\n        col = c(\"lightpink\", \"lightgreen\", \"lightblue\"))",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 3 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week3.html#visualisations",
+    "href": "quarto_2024_25/Live_code/week3.html#visualisations",
+    "title": "Week 3 practice",
+    "section": "",
+    "text": "In Week 3 Workshop we are focusing on visualisations.\nWe can visualise for exploration or for communication. Here is an example using some of the extra features in ggplot2 to produce a plot that is well annotated with a meaningful title, labels, a legend, and a clean theme. It uses the built-in dataset mtcars.\nFeel free to play around with the plot. I have left an empty code chunk here for you to inspect aspects of the mtcars dataset (e.g. using glimpse, head, str etc) to help you.\n\n# inspect the built-in mtcars dataset\n\n\n\n\n\n\n\n\n\nHere is another way of looking at the data.\nHave a think what each of the plots are telling you, and the relative advantages of different plotting types. You can try others types as well. The code will reset when you refresh the website.\nUse the ggplot cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf\n\n# Create a boxplot of mpg vs. cyl\nboxplot(mpg ~ cyl, \n        data = mtcars,\n        main = \"Boxplot of Miles Per Gallon by Number of Cylinders\",\n        xlab = \"Number of Cylinders\",\n        ylab = \"Miles Per Gallon (mpg)\",\n        col = c(\"lightpink\", \"lightgreen\", \"lightblue\"))",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 3 practice"
+    ]
+  },
+  {
     "objectID": "quarto_2024_25/Live_code/lv.html",
     "href": "quarto_2024_25/Live_code/lv.html",
     "title": "Week 2 practice",
@@ -196,7 +220,7 @@
     "href": "quarto_2024_25/Weekly_seminars/S3.html",
     "title": "Week 3 Seminar",
     "section": "",
-    "text": "Seminar 2 materials for 2024_2025: Data Cleaning",
+    "text": "Seminar 3 materials for 2024_2025: Visualisations",
     "crumbs": [
       "Welcome",
       "Workshop output files",
