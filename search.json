@@ -14,94 +14,63 @@
     "text": "MIT License\nCopyright (c) 2025 AliHarp\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
   },
   {
-    "objectID": "quarto_2024_25/Weekly_seminars/S2.html",
-    "href": "quarto_2024_25/Weekly_seminars/S2.html",
-    "title": "Week 2 Seminar",
+    "objectID": "quarto_2024_25/Weekly_seminars/S1.html",
+    "href": "quarto_2024_25/Weekly_seminars/S1.html",
+    "title": "Week 1 Seminar",
     "section": "",
-    "text": "Seminar 2 materials for 2024_2025: Data Cleaning",
+    "text": "Seminar 1 materials for 2024_2025: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1 materials for 2024_2025: Workshop",
     "crumbs": [
       "Welcome",
       "Workshop output files",
-      "Week 2 Seminar"
+      "Week 1 Seminar"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L3.html",
-    "href": "quarto_2024_25/Weekly_lectures/L3.html",
-    "title": "Lecture 3",
+    "objectID": "quarto_2024_25/Weekly_lectures/L8.html",
+    "href": "quarto_2024_25/Weekly_lectures/L8.html",
+    "title": "Lecture 8",
     "section": "",
-    "text": "Lecture 3 materials for 2023_2024:"
+    "text": "Lecture 8 materials for 2023_2024:"
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L1.html",
-    "href": "quarto_2024_25/Weekly_lectures/L1.html",
-    "title": "Lecture 1",
+    "objectID": "quarto_2024_25/Weekly_lectures/L9.html",
+    "href": "quarto_2024_25/Weekly_lectures/L9.html",
+    "title": "Lecture 9",
     "section": "",
-    "text": "Lecture 1 materials for 2024_2025:",
+    "text": "Lecture 9 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L11.html",
+    "href": "quarto_2024_25/Weekly_lectures/L11.html",
+    "title": "Lecture 11",
+    "section": "",
+    "text": "Lecture 11 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L2.html",
+    "href": "quarto_2024_25/Weekly_lectures/L2.html",
+    "title": "Lecture 2",
+    "section": "",
+    "text": "Lecture 2 materials for 2024_2025:",
     "crumbs": [
       "Welcome",
       "Lecture slides",
-      "Lecture 1"
+      "Lecture 2"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L4.html",
-    "href": "quarto_2024_25/Weekly_lectures/L4.html",
-    "title": "Lecture 4",
+    "objectID": "quarto_2024_25/Weekly_lectures/L7.html",
+    "href": "quarto_2024_25/Weekly_lectures/L7.html",
+    "title": "Lecture 7",
     "section": "",
-    "text": "Lecture 4 materials for 2023_2024:"
+    "text": "Lecture 7 materials for 2023_2024:"
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L10.html",
-    "href": "quarto_2024_25/Weekly_lectures/L10.html",
-    "title": "Lecture 10",
+    "objectID": "quarto_2024_25/Weekly_lectures/L5.html",
+    "href": "quarto_2024_25/Weekly_lectures/L5.html",
+    "title": "Lecture 5",
     "section": "",
-    "text": "Lecture 10 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L6.html",
-    "href": "quarto_2024_25/Weekly_lectures/L6.html",
-    "title": "Lecture 6",
-    "section": "",
-    "text": "Lecture 1 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/myproject.html",
-    "href": "quarto_2024_25/myproject.html",
-    "title": "myproject",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "quarto_2024_25/myproject.html#quarto",
-    "href": "quarto_2024_25/myproject.html#quarto",
-    "title": "myproject",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/lv.html",
-    "href": "quarto_2024_25/Live_code/lv.html",
-    "title": "Week 2 practice",
-    "section": "",
-    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 2 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
-    "href": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
-    "title": "Week 2 practice",
-    "section": "",
-    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 2 practice"
-    ]
+    "text": "Lecture 5 materials for 2023_2024:"
   },
   {
     "objectID": "quarto_2024_25/Live_code/live_q.html",
@@ -128,62 +97,110 @@
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L5.html",
-    "href": "quarto_2024_25/Weekly_lectures/L5.html",
-    "title": "Lecture 5",
+    "objectID": "quarto_2024_25/Live_code/lv.html",
+    "href": "quarto_2024_25/Live_code/lv.html",
+    "title": "Week 2 practice",
     "section": "",
-    "text": "Lecture 5 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L7.html",
-    "href": "quarto_2024_25/Weekly_lectures/L7.html",
-    "title": "Lecture 7",
-    "section": "",
-    "text": "Lecture 7 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L2.html",
-    "href": "quarto_2024_25/Weekly_lectures/L2.html",
-    "title": "Lecture 2",
-    "section": "",
-    "text": "Lecture 2 materials for 2024_2025:",
+    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
     "crumbs": [
       "Welcome",
-      "Lecture slides",
-      "Lecture 2"
+      "Workshop interactive code",
+      "Week 2 practice"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L11.html",
-    "href": "quarto_2024_25/Weekly_lectures/L11.html",
-    "title": "Lecture 11",
+    "objectID": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
+    "href": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
+    "title": "Week 2 practice",
     "section": "",
-    "text": "Lecture 11 materials for 2023_2024:"
+    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 2 practice"
+    ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L9.html",
-    "href": "quarto_2024_25/Weekly_lectures/L9.html",
-    "title": "Lecture 9",
+    "objectID": "quarto_2024_25/myproject.html",
+    "href": "quarto_2024_25/myproject.html",
+    "title": "myproject",
     "section": "",
-    "text": "Lecture 9 materials for 2023_2024:"
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L8.html",
-    "href": "quarto_2024_25/Weekly_lectures/L8.html",
-    "title": "Lecture 8",
+    "objectID": "quarto_2024_25/myproject.html#quarto",
+    "href": "quarto_2024_25/myproject.html#quarto",
+    "title": "myproject",
     "section": "",
-    "text": "Lecture 8 materials for 2023_2024:"
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
   },
   {
-    "objectID": "quarto_2024_25/Weekly_seminars/S1.html",
-    "href": "quarto_2024_25/Weekly_seminars/S1.html",
-    "title": "Week 1 Seminar",
+    "objectID": "quarto_2024_25/Weekly_lectures/L6.html",
+    "href": "quarto_2024_25/Weekly_lectures/L6.html",
+    "title": "Lecture 6",
     "section": "",
-    "text": "Seminar 1 materials for 2024_2025: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1 materials for 2024_2025: Workshop",
+    "text": "Lecture 1 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L10.html",
+    "href": "quarto_2024_25/Weekly_lectures/L10.html",
+    "title": "Lecture 10",
+    "section": "",
+    "text": "Lecture 10 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L4.html",
+    "href": "quarto_2024_25/Weekly_lectures/L4.html",
+    "title": "Lecture 4",
+    "section": "",
+    "text": "Lecture 4 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L1.html",
+    "href": "quarto_2024_25/Weekly_lectures/L1.html",
+    "title": "Lecture 1",
+    "section": "",
+    "text": "Lecture 1 materials for 2024_2025:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 1"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L3.html",
+    "href": "quarto_2024_25/Weekly_lectures/L3.html",
+    "title": "Lecture 3",
+    "section": "",
+    "text": "Lecture 3 materials for 2023_2024:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 3"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_seminars/S2.html",
+    "href": "quarto_2024_25/Weekly_seminars/S2.html",
+    "title": "Week 2 Seminar",
+    "section": "",
+    "text": "Seminar 2 materials for 2024_2025: Data Cleaning",
     "crumbs": [
       "Welcome",
       "Workshop output files",
-      "Week 1 Seminar"
+      "Week 2 Seminar"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_seminars/S3.html",
+    "href": "quarto_2024_25/Weekly_seminars/S3.html",
+    "title": "Week 3 Seminar",
+    "section": "",
+    "text": "Seminar 2 materials for 2024_2025: Data Cleaning",
+    "crumbs": [
+      "Welcome",
+      "Workshop output files",
+      "Week 3 Seminar"
     ]
   }
 ]
