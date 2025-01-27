@@ -48,14 +48,33 @@ Have a think what each of the plots are telling you, and the relative advantages
 Use the `ggplot` cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf
 
 ```{webr}
+# Convert cyl to a factor to treat it as categorical
+mtcars$cyl <- as.factor(mtcars$cyl)
 
-# Create a boxplot of mpg vs. cyl
-boxplot(mpg ~ cyl, 
-        data = mtcars,
-        main = "Boxplot of Miles Per Gallon by Number of Cylinders",
-        xlab = "Number of Cylinders",
-        ylab = "Miles Per Gallon (mpg)",
-        col = c("lightpink", "lightgreen", "lightblue"))
+ggplot(mtcars, aes(x = cyl, y = mpg, fill = cyl)) +
+  geom_boxplot(
+    width = 0.6, 
+    outlier.color = "red", 
+    outlier.shape = 16, 
+    outlier.size = 2
+  ) +
+  # Use a gentle color palette or customize your own
+  scale_fill_manual(values = c("lightpink", "lightgreen", "lightblue")) +
+  labs(
+    title = "Boxplot of Miles Per Gallon by Number of Cylinders",
+    subtitle = "Using the mtcars dataset",
+    x = "Number of Cylinders",
+    y = "Miles Per Gallon (mpg)"
+  ) +
+  # Remove the legend since the x-axis already implies cylinder groupings
+  theme_minimal(base_size = 14) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(face = "bold"),
+    plot.subtitle = element_text(face = "italic", margin = margin(b = 10)),
+    axis.title.x = element_text(margin = margin(t = 10)),
+    axis.title.y = element_text(margin = margin(r = 10))
+  )
 
 ```
 
