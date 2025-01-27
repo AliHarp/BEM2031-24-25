@@ -1,0 +1,12 @@
+---
+title: "Week 3 Seminar"
+author: "Alison Harper"
+format: html
+editor: visual
+---
+
+::: {.callout-tip title="Seminar 2 materials for 2024_2025: Data Cleaning" collapse="true"}
+<iframe width="100%" height="800" src="week_03_data_visualization.html">
+
+</iframe>
+:::
