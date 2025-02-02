@@ -77,9 +77,9 @@ fviz_cluster(kmeans_result, data = d[, c("xs", "ys")], geom = "point")
 ```
 
 Here are a couple of blank code chunks. You could, for example:
-* Inspect `d` (e.g. `head(d)`)
-* Look at the cluster assignments (`kmeans_result$cluster`)
-* Look athe the resulting cluster centres (`kmeans_result$centers')
+* Inspect `d` (e.g. `head(d)`)  
+* Look at the cluster assignments (`kmeans_result$cluster`)  
+* Look athe the resulting cluster centres (`kmeans_result$centers`)  
 
 ```{webr}
 
