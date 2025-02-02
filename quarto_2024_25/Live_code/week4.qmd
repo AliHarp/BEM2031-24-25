@@ -1,0 +1,77 @@
+---
+title: Week 3 practice
+format: live-html
+engine: knitr
+webr:
+  packages:
+    - ggplot2
+---
+## Clusters and similarity
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+In **Week 4 Workshop** we are focusing on clustering and dimension reduction.
+
+## k-means clustering
+
+The code sets a seed for reproducibility as we are randomly sampling from the `runif` (random uniform) and `rnorm` (random normal) distributions to generate a dataset of `k` clusters.
+
+We define parameters for number of clusters `k` and number of points per cluster `N`. We randomly pick cluster centres `xs` and `xy`. For each centre, we generate normally distributed data points around those centres, with a standard deviation of 0.5.
+
+Try changing `k` with the same seed.
+Try changing the seed.
+What happens?
+
+```{webr}
+#set seed so we get the same results each time
+set.seed(666)
+
+# Parameters
+k <- 5 # how many clusters do we want?
+N <- 500
+
+# Generate cluster centers
+xs <- runif(k, 0, 10)
+ys <- runif(k, 0, 10)
+
+# Generate data for each cluster
+d <- data.frame(
+  xs = unlist(lapply(xs, function(x) rnorm(N, mean = x, sd = 0.5))),
+  ys = unlist(lapply(ys, function(y) rnorm(N, mean = y, sd = 0.5))),
+  cluster = factor(rep(1:k, each = N)) # Add a 'cluster' column
+)
+
+# Plot the data
+ggplot(d, aes(x = xs, y = ys, color = cluster)) +
+  geom_point(alpha = 0.5) +
+  theme_minimal() +
+  scale_color_discrete(name = "Cluster")
+```
+
+See if the Within Cluster Sum of Squares (WSS) recommends the same number of clusters as those we have randomly generated.
+
+Try changing the method to 'silhouette'. The Silhouette method shows how close each point in a cluster is to points in the neighboring cluster.
+
+Are they the same or different? Try it with different `k` and different seeds.
+
+```{webr}
+fviz_nbclust(d,kmeans, method = 'wss')
+```
+
+Let's use the dataset we created `d` and run a kmeans algorithm. What happens? Try it with different `k` and with different seeds.
+
+>We did not set a seed when running the algorithm. If we did, our results would be identical each time we run it (try it, eg `set.seed(123)` before running `kmeans` so the initial cluster centres are chosen reproducibly.
+
+>`kmeans` starts by randomly choosing initial cluster centres unless you have explictly specified an intialisation method. Because of this random intialisation, each run can converge to slightly different final centres and varying cluster assignments. 
+
+>A better way of dealing with this is to use an `nstart` parameter to tell `kmeans` how many different random sets of intial centroids to try. It then picks the best solution, i.e. the one with the lowest total within-cluster variation.
+Try adding `nstart = 25` to the `kmeans` function.
+
+```{webr}
+# Perform k-means clustering (use only numeric columns)
+kmeans_result <- kmeans(d[, c("xs", "ys")], centers = k)
+
+# Visualize clusters using factoextra
+fviz_cluster(kmeans_result, data = d[, c("xs", "ys")], geom = "point")
+```
+
