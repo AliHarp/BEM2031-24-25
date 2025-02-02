@@ -1,0 +1,12 @@
+---
+title: "Week 4 Seminar"
+author: "Alison Harper"
+format: html
+editor: visual
+---
+
+::: {.callout-tip title="Seminar 4 materials for 2024_2025: Dimension reduction and clustering" collapse="true"}
+<iframe width="100%" height="800" src="week4_dim_red.html">
+
+</iframe>
+:::
