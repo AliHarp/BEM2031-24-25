@@ -39,6 +39,7 @@ website:
           - quarto_2024_25/Weekly_lectures/L1.qmd
           - quarto_2024_25/Weekly_lectures/L2.qmd
           - quarto_2024_25/Weekly_lectures/L3.qmd
+          - quarto_2024_25/Weekly_lectures/L4.qmd
 
       - section: "Workshop output files"
         contents:

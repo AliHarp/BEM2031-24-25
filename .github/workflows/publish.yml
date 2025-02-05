@@ -23,7 +23,7 @@ jobs:
           r-version: '4.2.2'
 
       - name: Install R packages
-        run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "ggplot2", "rmarkdown", "stringdist"))'
+        run: Rscript -e 'install.packages(c("rmarkdown", "knitr", "ggplot2", "rmarkdown"))'
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
