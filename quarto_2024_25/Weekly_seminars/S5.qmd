@@ -1,0 +1,12 @@
+---
+title: "Week 5 Seminar"
+author: "Alison Harper"
+format: html
+editor: visual
+---
+
+::: {.callout-tip title="Seminar 5 materials for 2024_2025: Introduction to prediction analysis" collapse="true"}
+<iframe width="100%" height="800" src="week_05_yummy_mushrooms_prep.html">
+
+</iframe>
+:::
