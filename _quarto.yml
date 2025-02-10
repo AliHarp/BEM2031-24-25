@@ -40,6 +40,7 @@ website:
           - quarto_2024_25/Weekly_lectures/L2.qmd
           - quarto_2024_25/Weekly_lectures/L3.qmd
           - quarto_2024_25/Weekly_lectures/L4.qmd
+          - quarto_2024_25/Weekly_lectures/L5.qmd
 
       - section: "Workshop output files"
         contents:
@@ -71,6 +72,6 @@ format:
     theme: cosmo
     css: styles.css
     toc: true
-
+  page-layout: full
 editor: visual
 
