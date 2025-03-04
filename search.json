@@ -1,68 +1,74 @@
 [
   {
-    "objectID": "quarto_2024_25/myproject.html",
-    "href": "quarto_2024_25/myproject.html",
-    "title": "myproject",
+    "objectID": "quarto_2024_25/Weekly_seminars/S4.html",
+    "href": "quarto_2024_25/Weekly_seminars/S4.html",
+    "title": "Week 4 Seminar",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "quarto_2024_25/myproject.html#quarto",
-    "href": "quarto_2024_25/myproject.html#quarto",
-    "title": "myproject",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L8.html",
-    "href": "quarto_2024_25/Weekly_lectures/L8.html",
-    "title": "Lecture 8",
-    "section": "",
-    "text": "Lecture 8 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L7.html",
-    "href": "quarto_2024_25/Weekly_lectures/L7.html",
-    "title": "Lecture 7",
-    "section": "",
-    "text": "Lecture 7 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L10.html",
-    "href": "quarto_2024_25/Weekly_lectures/L10.html",
-    "title": "Lecture 10",
-    "section": "",
-    "text": "Lecture 10 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L3.html",
-    "href": "quarto_2024_25/Weekly_lectures/L3.html",
-    "title": "Lecture 3",
-    "section": "",
-    "text": "Lecture 3 materials for 2023_2024:",
+    "text": "Seminar 4 materials for 2024_2025: Dimension reduction and clustering",
     "crumbs": [
       "Welcome",
-      "Lecture slides",
-      "Lecture 3"
+      "Workshop output files",
+      "Week 4 Seminar"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L6.html",
-    "href": "quarto_2024_25/Weekly_lectures/L6.html",
-    "title": "Lecture 6",
+    "objectID": "quarto_2024_25/Weekly_seminars/S2.html",
+    "href": "quarto_2024_25/Weekly_seminars/S2.html",
+    "title": "Week 2 Seminar",
     "section": "",
-    "text": "Lecture 1 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L5.html",
-    "href": "quarto_2024_25/Weekly_lectures/L5.html",
-    "title": "Lecture 5",
-    "section": "",
-    "text": "Lecture 5 materials for 2025_2025:",
+    "text": "Seminar 2 materials for 2024_2025: Data Cleaning",
     "crumbs": [
       "Welcome",
-      "Lecture slides",
-      "Lecture 5"
+      "Workshop output files",
+      "Week 2 Seminar"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_seminars/S5.html",
+    "href": "quarto_2024_25/Weekly_seminars/S5.html",
+    "title": "Week 5 Seminar",
+    "section": "",
+    "text": "Seminar 5 materials for 2024_2025: Introduction to prediction analysis",
+    "crumbs": [
+      "Welcome",
+      "Workshop output files",
+      "Week 5 Seminar"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week4.html",
+    "href": "quarto_2024_25/Live_code/week4.html",
+    "title": "Week 4 practice",
+    "section": "",
+    "text": "In Week 4 Workshop we are focusing on clustering and dimension reduction.",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 4 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week4.html#clusters-and-similarity",
+    "href": "quarto_2024_25/Live_code/week4.html#clusters-and-similarity",
+    "title": "Week 4 practice",
+    "section": "",
+    "text": "In Week 4 Workshop we are focusing on clustering and dimension reduction.",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 4 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week4.html#k-means-clustering",
+    "href": "quarto_2024_25/Live_code/week4.html#k-means-clustering",
+    "title": "Week 4 practice",
+    "section": "k-means clustering",
+    "text": "k-means clustering\nThe code sets a seed for reproducibility as we are randomly sampling from the runif (random uniform) and rnorm (random normal) distributions to generate a dataset of k clusters.\nWe define parameters for number of clusters k and number of points per cluster N. We randomly pick cluster centres xs and xy. For each centre, we generate normally distributed data points around those centres, with a standard deviation of 0.5.\nTry changing k with the same seed. Try changing the seed. What happens?\n\n\n\n\n\n\n\n\nSee if the Within Cluster Sum of Squares (WSS) recommends the same number of clusters as those we have randomly generated.\nTry changing the method to ‘silhouette’. The Silhouette method shows how close each point in a cluster is to points in the neighboring cluster.\nAre they the same or different? Try it with different k and different seeds.\n\n\n\n\n\n\n\n\nLet’s use the dataset we created d and run a kmeans algorithm. What happens? Try it with different k and with different seeds.\n\nWe did not set a seed when running the algorithm. If we did, our results would be identical each time we run it (try it, eg set.seed(123) before running kmeans so the initial cluster centres are chosen reproducibly.\n\n\nkmeans starts by randomly choosing initial cluster centres unless you have explictly specified an intialisation method. Because of this random intialisation, each run can converge to slightly different final centres and varying cluster assignments.\n\n\nA better way of dealing with this is to use an nstart parameter to tell kmeans how many different random sets of intial centroids to try. It then picks the best solution, i.e. the one with the lowest total within-cluster variation. Try adding nstart = 25 to the kmeans function.\n\n\n\n\n\n\n\n\n\nHere are a couple of blank code chunks. You could, for example: * Inspect d (e.g. head(d))\n* Look at the cluster assignments (kmeans_result$cluster)\n* Look athe the resulting cluster centres (kmeans_result$centers)",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 4 practice"
     ]
   },
   {
@@ -114,83 +120,137 @@
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_seminars/S2.html",
-    "href": "quarto_2024_25/Weekly_seminars/S2.html",
-    "title": "Week 2 Seminar",
+    "objectID": "quarto_2024_25/Weekly_lectures/L11.html",
+    "href": "quarto_2024_25/Weekly_lectures/L11.html",
+    "title": "Lecture 11",
     "section": "",
-    "text": "Seminar 2 materials for 2024_2025: Data Cleaning",
+    "text": "Lecture 11 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L7.html",
+    "href": "quarto_2024_25/Weekly_lectures/L7.html",
+    "title": "Lecture 7",
+    "section": "",
+    "text": "Lecture 7 materials for 2023_2024:",
     "crumbs": [
       "Welcome",
-      "Workshop output files",
-      "Week 2 Seminar"
+      "Lecture slides",
+      "Lecture 7"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_seminars/S1.html",
-    "href": "quarto_2024_25/Weekly_seminars/S1.html",
-    "title": "Week 1 Seminar",
+    "objectID": "quarto_2024_25/Weekly_lectures/L6.html",
+    "href": "quarto_2024_25/Weekly_lectures/L6.html",
+    "title": "Lecture 6",
     "section": "",
-    "text": "Seminar 1 materials for 2024_2025: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1 materials for 2024_2025: Workshop",
+    "text": "Lecture 1 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L1.html",
+    "href": "quarto_2024_25/Weekly_lectures/L1.html",
+    "title": "Lecture 1",
+    "section": "",
+    "text": "Lecture 1 materials for 2024_2025:",
     "crumbs": [
       "Welcome",
-      "Workshop output files",
-      "Week 1 Seminar"
+      "Lecture slides",
+      "Lecture 1"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_seminars/S3.html",
-    "href": "quarto_2024_25/Weekly_seminars/S3.html",
-    "title": "Week 3 Seminar",
+    "objectID": "quarto_2024_25/Weekly_lectures/L5.html",
+    "href": "quarto_2024_25/Weekly_lectures/L5.html",
+    "title": "Lecture 5",
     "section": "",
-    "text": "Seminar 3 materials for 2024_2025: Visualisations",
+    "text": "Lecture 5 materials for 2025_2025:",
     "crumbs": [
       "Welcome",
-      "Workshop output files",
-      "Week 3 Seminar"
+      "Lecture slides",
+      "Lecture 5"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "BEM2031 2024-25",
+    "objectID": "quarto_2024_25/license.html",
+    "href": "quarto_2024_25/license.html",
+    "title": "Open License",
     "section": "",
-    "text": "This handbook contains all the materials for BEM2031 2024-25.\nPlease contact me if there are any issues, concerns, queries.\nHere is the timetable for the term:"
+    "text": "MIT License\nCopyright (c) 2025 AliHarp\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
   },
   {
-    "objectID": "quarto_2024_25/Weekly_seminars/S5.html",
-    "href": "quarto_2024_25/Weekly_seminars/S5.html",
-    "title": "Week 5 Seminar",
+    "objectID": "quarto_2024_25/myproject.html",
+    "href": "quarto_2024_25/myproject.html",
+    "title": "myproject",
     "section": "",
-    "text": "Seminar 5 materials for 2024_2025: Introduction to prediction analysis",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "quarto_2024_25/myproject.html#quarto",
+    "href": "quarto_2024_25/myproject.html#quarto",
+    "title": "myproject",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L8.html",
+    "href": "quarto_2024_25/Weekly_lectures/L8.html",
+    "title": "Lecture 8",
+    "section": "",
+    "text": "Lecture 8 materials for 2023_2024:",
     "crumbs": [
       "Welcome",
-      "Workshop output files",
-      "Week 5 Seminar"
+      "Lecture slides",
+      "Lecture 8"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_seminars/S7.html",
-    "href": "quarto_2024_25/Weekly_seminars/S7.html",
-    "title": "Week 7 Seminar",
+    "objectID": "quarto_2024_25/Weekly_lectures/L9.html",
+    "href": "quarto_2024_25/Weekly_lectures/L9.html",
+    "title": "Lecture 9",
     "section": "",
-    "text": "Seminar 7 materials for 2024_2025: How to evaluate our model",
+    "text": "Lecture 9 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L3.html",
+    "href": "quarto_2024_25/Weekly_lectures/L3.html",
+    "title": "Lecture 3",
+    "section": "",
+    "text": "Lecture 3 materials for 2023_2024:",
     "crumbs": [
       "Welcome",
-      "Workshop output files",
-      "Week 7 Seminar"
+      "Lecture slides",
+      "Lecture 3"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_seminars/S4.html",
-    "href": "quarto_2024_25/Weekly_seminars/S4.html",
-    "title": "Week 4 Seminar",
+    "objectID": "quarto_2024_25/Weekly_lectures/L2.html",
+    "href": "quarto_2024_25/Weekly_lectures/L2.html",
+    "title": "Lecture 2",
     "section": "",
-    "text": "Seminar 4 materials for 2024_2025: Dimension reduction and clustering",
+    "text": "Lecture 2 materials for 2024_2025:",
     "crumbs": [
       "Welcome",
-      "Workshop output files",
-      "Week 4 Seminar"
+      "Lecture slides",
+      "Lecture 2"
     ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L4.html",
+    "href": "quarto_2024_25/Weekly_lectures/L4.html",
+    "title": "Lecture 4",
+    "section": "",
+    "text": "Lecture 4 materials for 2023_2024:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 4"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L10.html",
+    "href": "quarto_2024_25/Weekly_lectures/L10.html",
+    "title": "Lecture 10",
+    "section": "",
+    "text": "Lecture 10 materials for 2023_2024:"
   },
   {
     "objectID": "quarto_2024_25/Live_code/week3.html",
@@ -214,42 +274,6 @@
       "Welcome",
       "Workshop interactive code",
       "Week 3 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/week4.html",
-    "href": "quarto_2024_25/Live_code/week4.html",
-    "title": "Week 4 practice",
-    "section": "",
-    "text": "In Week 4 Workshop we are focusing on clustering and dimension reduction.",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 4 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/week4.html#clusters-and-similarity",
-    "href": "quarto_2024_25/Live_code/week4.html#clusters-and-similarity",
-    "title": "Week 4 practice",
-    "section": "",
-    "text": "In Week 4 Workshop we are focusing on clustering and dimension reduction.",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 4 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/week4.html#k-means-clustering",
-    "href": "quarto_2024_25/Live_code/week4.html#k-means-clustering",
-    "title": "Week 4 practice",
-    "section": "k-means clustering",
-    "text": "k-means clustering\nThe code sets a seed for reproducibility as we are randomly sampling from the runif (random uniform) and rnorm (random normal) distributions to generate a dataset of k clusters.\nWe define parameters for number of clusters k and number of points per cluster N. We randomly pick cluster centres xs and xy. For each centre, we generate normally distributed data points around those centres, with a standard deviation of 0.5.\nTry changing k with the same seed. Try changing the seed. What happens?\n\n\n\n\n\n\n\n\nSee if the Within Cluster Sum of Squares (WSS) recommends the same number of clusters as those we have randomly generated.\nTry changing the method to ‘silhouette’. The Silhouette method shows how close each point in a cluster is to points in the neighboring cluster.\nAre they the same or different? Try it with different k and different seeds.\n\n\n\n\n\n\n\n\nLet’s use the dataset we created d and run a kmeans algorithm. What happens? Try it with different k and with different seeds.\n\nWe did not set a seed when running the algorithm. If we did, our results would be identical each time we run it (try it, eg set.seed(123) before running kmeans so the initial cluster centres are chosen reproducibly.\n\n\nkmeans starts by randomly choosing initial cluster centres unless you have explictly specified an intialisation method. Because of this random intialisation, each run can converge to slightly different final centres and varying cluster assignments.\n\n\nA better way of dealing with this is to use an nstart parameter to tell kmeans how many different random sets of intial centroids to try. It then picks the best solution, i.e. the one with the lowest total within-cluster variation. Try adding nstart = 25 to the kmeans function.\n\n\n\n\n\n\n\n\n\nHere are a couple of blank code chunks. You could, for example: * Inspect d (e.g. head(d))\n* Look at the cluster assignments (kmeans_result$cluster)\n* Look athe the resulting cluster centres (kmeans_result$centers)",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 4 practice"
     ]
   },
   {
@@ -325,60 +349,46 @@
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L1.html",
-    "href": "quarto_2024_25/Weekly_lectures/L1.html",
-    "title": "Lecture 1",
+    "objectID": "quarto_2024_25/Weekly_seminars/S1.html",
+    "href": "quarto_2024_25/Weekly_seminars/S1.html",
+    "title": "Week 1 Seminar",
     "section": "",
-    "text": "Lecture 1 materials for 2024_2025:",
+    "text": "Seminar 1 materials for 2024_2025: Introduction\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 1 materials for 2024_2025: Workshop",
     "crumbs": [
       "Welcome",
-      "Lecture slides",
-      "Lecture 1"
+      "Workshop output files",
+      "Week 1 Seminar"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L4.html",
-    "href": "quarto_2024_25/Weekly_lectures/L4.html",
-    "title": "Lecture 4",
+    "objectID": "quarto_2024_25/Weekly_seminars/S3.html",
+    "href": "quarto_2024_25/Weekly_seminars/S3.html",
+    "title": "Week 3 Seminar",
     "section": "",
-    "text": "Lecture 4 materials for 2023_2024:",
+    "text": "Seminar 3 materials for 2024_2025: Visualisations",
     "crumbs": [
       "Welcome",
-      "Lecture slides",
-      "Lecture 4"
+      "Workshop output files",
+      "Week 3 Seminar"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L9.html",
-    "href": "quarto_2024_25/Weekly_lectures/L9.html",
-    "title": "Lecture 9",
+    "objectID": "quarto_2024_25/Weekly_seminars/S7.html",
+    "href": "quarto_2024_25/Weekly_seminars/S7.html",
+    "title": "Week 7 Seminar",
     "section": "",
-    "text": "Lecture 9 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L2.html",
-    "href": "quarto_2024_25/Weekly_lectures/L2.html",
-    "title": "Lecture 2",
-    "section": "",
-    "text": "Lecture 2 materials for 2024_2025:",
+    "text": "Seminar 7 materials for 2024_2025: How to evaluate our model",
     "crumbs": [
       "Welcome",
-      "Lecture slides",
-      "Lecture 2"
+      "Workshop output files",
+      "Week 7 Seminar"
     ]
   },
   {
-    "objectID": "quarto_2024_25/Weekly_lectures/L11.html",
-    "href": "quarto_2024_25/Weekly_lectures/L11.html",
-    "title": "Lecture 11",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "BEM2031 2024-25",
     "section": "",
-    "text": "Lecture 11 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/license.html",
-    "href": "quarto_2024_25/license.html",
-    "title": "Open License",
-    "section": "",
-    "text": "MIT License\nCopyright (c) 2025 AliHarp\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+    "text": "This handbook contains all the materials for BEM2031 2024-25.\nPlease contact me if there are any issues, concerns, queries.\nHere is the timetable for the term:"
   }
 ]
