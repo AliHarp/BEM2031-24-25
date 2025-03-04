@@ -48,6 +48,247 @@
     ]
   },
   {
+    "objectID": "quarto_2024_25/Live_code/week8.html",
+    "href": "quarto_2024_25/Live_code/week8.html",
+    "title": "Week 8 practice",
+    "section": "",
+    "text": "In Week 8 Workshop we are using text analytics and classification models to predict whether YouTube comments are HAM or SPAM.",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 8 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week8.html#text-analytics",
+    "href": "quarto_2024_25/Live_code/week8.html#text-analytics",
+    "title": "Week 8 practice",
+    "section": "",
+    "text": "In Week 8 Workshop we are using text analytics and classification models to predict whether YouTube comments are HAM or SPAM.",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 8 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week8.html#what-is-random",
+    "href": "quarto_2024_25/Live_code/week8.html#what-is-random",
+    "title": "Week 8 practice",
+    "section": "What is random?",
+    "text": "What is random?\nA very simple way of analysing text is to count occurances of words. We see word clouds a lot! How useful are they?\n\n\n\n\n\n\nLoad in your ‘corpus’ or document",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 8 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/lv.html",
+    "href": "quarto_2024_25/Live_code/lv.html",
+    "title": "Week 2 practice",
+    "section": "",
+    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 2 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
+    "href": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
+    "title": "Week 2 practice",
+    "section": "",
+    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 2 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/live_q.html",
+    "href": "quarto_2024_25/Live_code/live_q.html",
+    "title": "Week 1 practice",
+    "section": "",
+    "text": "Some of the materials for Week 1 Workshop can be run live here. This provide an interactive playground to try out your code.\nThe tidyverse package has been loaded in this environment. It consists of many different packages. We will only be using ggplot2 here:\nSummarise the data. The data mtcars is available in the base version of R. we can use the function summary to do this.",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 1 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/live_q.html#your-first-plot",
+    "href": "quarto_2024_25/Live_code/live_q.html#your-first-plot",
+    "title": "Week 1 practice",
+    "section": "Your first plot",
+    "text": "Your first plot\nLets look at a different dataset - the mpg dataset is included in R:\n\n\n\n\n\n\n\n\nCreate a simple plot:\n\n\n\n\n\n\n\n\nEXERCISE: Look at some summary statistics. What function will you use on the mpg data to do this?\n\n\n\n\n\n\n\n\n\n\n\nPlot using colour by cty:\n\n\n\n\n\n\n\n\nEXERCISE: Color the points by the class variable.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\n\n\n\nCopy and paste the previous code which colours by ‘cty’. What change do you need to make?",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 1 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L11.html",
+    "href": "quarto_2024_25/Weekly_lectures/L11.html",
+    "title": "Lecture 11",
+    "section": "",
+    "text": "Lecture 11 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L7.html",
+    "href": "quarto_2024_25/Weekly_lectures/L7.html",
+    "title": "Lecture 7",
+    "section": "",
+    "text": "Lecture 7 materials for 2024_2025:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 7"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L6.html",
+    "href": "quarto_2024_25/Weekly_lectures/L6.html",
+    "title": "Lecture 6",
+    "section": "",
+    "text": "Lecture 1 materials for 2024_2025:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L1.html",
+    "href": "quarto_2024_25/Weekly_lectures/L1.html",
+    "title": "Lecture 1",
+    "section": "",
+    "text": "Lecture 1 materials for 2024_2025:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 1"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L5.html",
+    "href": "quarto_2024_25/Weekly_lectures/L5.html",
+    "title": "Lecture 5",
+    "section": "",
+    "text": "Lecture 5 materials for 2025_2025:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 5"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/license.html",
+    "href": "quarto_2024_25/license.html",
+    "title": "Open License",
+    "section": "",
+    "text": "MIT License\nCopyright (c) 2025 AliHarp\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
+  },
+  {
+    "objectID": "quarto_2024_25/myproject.html",
+    "href": "quarto_2024_25/myproject.html",
+    "title": "myproject",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "quarto_2024_25/myproject.html#quarto",
+    "href": "quarto_2024_25/myproject.html#quarto",
+    "title": "myproject",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L8.html",
+    "href": "quarto_2024_25/Weekly_lectures/L8.html",
+    "title": "Lecture 8",
+    "section": "",
+    "text": "Lecture 8 materials for 2024_2025:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 8"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L9.html",
+    "href": "quarto_2024_25/Weekly_lectures/L9.html",
+    "title": "Lecture 9",
+    "section": "",
+    "text": "Lecture 9 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L3.html",
+    "href": "quarto_2024_25/Weekly_lectures/L3.html",
+    "title": "Lecture 3",
+    "section": "",
+    "text": "Lecture 3 materials for 2024_2025:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 3"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L2.html",
+    "href": "quarto_2024_25/Weekly_lectures/L2.html",
+    "title": "Lecture 2",
+    "section": "",
+    "text": "Lecture 2 materials for 2024_2025:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 2"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L4.html",
+    "href": "quarto_2024_25/Weekly_lectures/L4.html",
+    "title": "Lecture 4",
+    "section": "",
+    "text": "Lecture 4 materials for 2023_2024:",
+    "crumbs": [
+      "Welcome",
+      "Lecture slides",
+      "Lecture 4"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_lectures/L10.html",
+    "href": "quarto_2024_25/Weekly_lectures/L10.html",
+    "title": "Lecture 10",
+    "section": "",
+    "text": "Lecture 10 materials for 2023_2024:"
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week3.html",
+    "href": "quarto_2024_25/Live_code/week3.html",
+    "title": "Week 3 practice",
+    "section": "",
+    "text": "In Week 3 Workshop we are focusing on visualisations.\nWe can visualise for exploration or for communication. Here is an example using some of the extra features in ggplot2 to produce a plot that is well annotated with a meaningful title, labels, a legend, and a clean theme. It uses the built-in dataset mtcars.\nFeel free to play around with the plot. I have left an empty code chunk here for you to inspect aspects of the mtcars dataset (e.g. using glimpse, head, str etc) to help you.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHere is another way of looking at the data.\nHave a think what each of the plots are telling you, and the relative advantages of different plotting types. You can try others types as well. The code will reset when you refresh the website.\nUse the ggplot cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 3 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week3.html#visualisations",
+    "href": "quarto_2024_25/Live_code/week3.html#visualisations",
+    "title": "Week 3 practice",
+    "section": "",
+    "text": "In Week 3 Workshop we are focusing on visualisations.\nWe can visualise for exploration or for communication. Here is an example using some of the extra features in ggplot2 to produce a plot that is well annotated with a meaningful title, labels, a legend, and a clean theme. It uses the built-in dataset mtcars.\nFeel free to play around with the plot. I have left an empty code chunk here for you to inspect aspects of the mtcars dataset (e.g. using glimpse, head, str etc) to help you.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHere is another way of looking at the data.\nHave a think what each of the plots are telling you, and the relative advantages of different plotting types. You can try others types as well. The code will reset when you refresh the website.\nUse the ggplot cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 3 practice"
+    ]
+  },
+  {
     "objectID": "quarto_2024_25/Live_code/week5.html",
     "href": "quarto_2024_25/Live_code/week5.html",
     "title": "Week 5 practice",
@@ -117,211 +358,6 @@
       "Welcome",
       "Workshop interactive code",
       "Week 5 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/week3.html",
-    "href": "quarto_2024_25/Live_code/week3.html",
-    "title": "Week 3 practice",
-    "section": "",
-    "text": "In Week 3 Workshop we are focusing on visualisations.\nWe can visualise for exploration or for communication. Here is an example using some of the extra features in ggplot2 to produce a plot that is well annotated with a meaningful title, labels, a legend, and a clean theme. It uses the built-in dataset mtcars.\nFeel free to play around with the plot. I have left an empty code chunk here for you to inspect aspects of the mtcars dataset (e.g. using glimpse, head, str etc) to help you.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHere is another way of looking at the data.\nHave a think what each of the plots are telling you, and the relative advantages of different plotting types. You can try others types as well. The code will reset when you refresh the website.\nUse the ggplot cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 3 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/week3.html#visualisations",
-    "href": "quarto_2024_25/Live_code/week3.html#visualisations",
-    "title": "Week 3 practice",
-    "section": "",
-    "text": "In Week 3 Workshop we are focusing on visualisations.\nWe can visualise for exploration or for communication. Here is an example using some of the extra features in ggplot2 to produce a plot that is well annotated with a meaningful title, labels, a legend, and a clean theme. It uses the built-in dataset mtcars.\nFeel free to play around with the plot. I have left an empty code chunk here for you to inspect aspects of the mtcars dataset (e.g. using glimpse, head, str etc) to help you.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHere is another way of looking at the data.\nHave a think what each of the plots are telling you, and the relative advantages of different plotting types. You can try others types as well. The code will reset when you refresh the website.\nUse the ggplot cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 3 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L10.html",
-    "href": "quarto_2024_25/Weekly_lectures/L10.html",
-    "title": "Lecture 10",
-    "section": "",
-    "text": "Lecture 10 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L4.html",
-    "href": "quarto_2024_25/Weekly_lectures/L4.html",
-    "title": "Lecture 4",
-    "section": "",
-    "text": "Lecture 4 materials for 2023_2024:",
-    "crumbs": [
-      "Welcome",
-      "Lecture slides",
-      "Lecture 4"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L2.html",
-    "href": "quarto_2024_25/Weekly_lectures/L2.html",
-    "title": "Lecture 2",
-    "section": "",
-    "text": "Lecture 2 materials for 2024_2025:",
-    "crumbs": [
-      "Welcome",
-      "Lecture slides",
-      "Lecture 2"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L3.html",
-    "href": "quarto_2024_25/Weekly_lectures/L3.html",
-    "title": "Lecture 3",
-    "section": "",
-    "text": "Lecture 3 materials for 2024_2025:",
-    "crumbs": [
-      "Welcome",
-      "Lecture slides",
-      "Lecture 3"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L9.html",
-    "href": "quarto_2024_25/Weekly_lectures/L9.html",
-    "title": "Lecture 9",
-    "section": "",
-    "text": "Lecture 9 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L8.html",
-    "href": "quarto_2024_25/Weekly_lectures/L8.html",
-    "title": "Lecture 8",
-    "section": "",
-    "text": "Lecture 8 materials for 2024_2025:",
-    "crumbs": [
-      "Welcome",
-      "Lecture slides",
-      "Lecture 8"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/myproject.html",
-    "href": "quarto_2024_25/myproject.html",
-    "title": "myproject",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "quarto_2024_25/myproject.html#quarto",
-    "href": "quarto_2024_25/myproject.html#quarto",
-    "title": "myproject",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "quarto_2024_25/license.html",
-    "href": "quarto_2024_25/license.html",
-    "title": "Open License",
-    "section": "",
-    "text": "MIT License\nCopyright (c) 2025 AliHarp\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the “Software”), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE."
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L5.html",
-    "href": "quarto_2024_25/Weekly_lectures/L5.html",
-    "title": "Lecture 5",
-    "section": "",
-    "text": "Lecture 5 materials for 2025_2025:",
-    "crumbs": [
-      "Welcome",
-      "Lecture slides",
-      "Lecture 5"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L1.html",
-    "href": "quarto_2024_25/Weekly_lectures/L1.html",
-    "title": "Lecture 1",
-    "section": "",
-    "text": "Lecture 1 materials for 2024_2025:",
-    "crumbs": [
-      "Welcome",
-      "Lecture slides",
-      "Lecture 1"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L6.html",
-    "href": "quarto_2024_25/Weekly_lectures/L6.html",
-    "title": "Lecture 6",
-    "section": "",
-    "text": "Lecture 1 materials for 2024_2025:"
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L7.html",
-    "href": "quarto_2024_25/Weekly_lectures/L7.html",
-    "title": "Lecture 7",
-    "section": "",
-    "text": "Lecture 7 materials for 2024_2025:",
-    "crumbs": [
-      "Welcome",
-      "Lecture slides",
-      "Lecture 7"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Weekly_lectures/L11.html",
-    "href": "quarto_2024_25/Weekly_lectures/L11.html",
-    "title": "Lecture 11",
-    "section": "",
-    "text": "Lecture 11 materials for 2023_2024:"
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/live_q.html",
-    "href": "quarto_2024_25/Live_code/live_q.html",
-    "title": "Week 1 practice",
-    "section": "",
-    "text": "Some of the materials for Week 1 Workshop can be run live here. This provide an interactive playground to try out your code.\nThe tidyverse package has been loaded in this environment. It consists of many different packages. We will only be using ggplot2 here:\nSummarise the data. The data mtcars is available in the base version of R. we can use the function summary to do this.",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 1 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/live_q.html#your-first-plot",
-    "href": "quarto_2024_25/Live_code/live_q.html#your-first-plot",
-    "title": "Week 1 practice",
-    "section": "Your first plot",
-    "text": "Your first plot\nLets look at a different dataset - the mpg dataset is included in R:\n\n\n\n\n\n\n\n\nCreate a simple plot:\n\n\n\n\n\n\n\n\nEXERCISE: Look at some summary statistics. What function will you use on the mpg data to do this?\n\n\n\n\n\n\n\n\n\n\n\nPlot using colour by cty:\n\n\n\n\n\n\n\n\nEXERCISE: Color the points by the class variable.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHint 1\n\n\n\n\n\nCopy and paste the previous code which colours by ‘cty’. What change do you need to make?",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 1 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/lv.html",
-    "href": "quarto_2024_25/Live_code/lv.html",
-    "title": "Week 2 practice",
-    "section": "",
-    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 2 practice"
-    ]
-  },
-  {
-    "objectID": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
-    "href": "quarto_2024_25/Live_code/lv.html#introducing-distance-and-similarity",
-    "title": "Week 2 practice",
-    "section": "",
-    "text": "In Week 2 Workshop we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\nLets have a look at how the Levenshtein (lv) distance works.\nWe need the library stringdist which I have installed for you.\nWe can define our strings:\n\n\n\n\n\n\n\n\nCalculate the Levenshtein distance\n\n\n\n\n\n\n\n\nPrint the result\n\n\n\n\n\n\n\n\nTry changing the strings!",
-    "crumbs": [
-      "Welcome",
-      "Workshop interactive code",
-      "Week 2 practice"
     ]
   },
   {
