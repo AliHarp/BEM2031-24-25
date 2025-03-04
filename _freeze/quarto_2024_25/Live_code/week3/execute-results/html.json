@@ -1,0 +1,15 @@
+{
+  "hash": "85dbb7de81c0c4aa836e7666981b8bc0",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Week 3 practice\nformat: live-html\nengine: knitr\nwebr:\n  packages:\n    - ggplot2\n---\n\n## Visualisations\n\n::: {.cell}\n\n:::\n\n\n\nIn **Week 3 Workshop** we are focusing on visualisations.\n\nWe can visualise for exploration or for communication. Here is an example using some of the extra features in `ggplot2` to produce a plot that is well annotated with a meaningful title, labels, a legend, and a clean theme.  It uses the built-in dataset `mtcars`.\n\nFeel free to play around with the plot.  I have left an empty code chunk here for you to inspect aspects of the mtcars dataset (e.g. using `glimpse`, `head`, `str` etc) to help you.\n\n\n\n::: {.cell}\n```{webr}\n# inspect the built-in mtcars dataset\n```\n:::\n\n::: {.cell}\n```{webr}\n# Create a scatter plot\nggplot(mtcars, aes(x = hp, y = mpg, color = factor(cyl))) + #set the cyl column to a factor (category)\n  geom_point(size = 3, alpha = 0.7) +  # Add points with transparency and size\n  labs(\n    title = \"Miles Per Gallon vs Horsepower\",\n    x = \"Horsepower\",\n    y = \"Miles per Gallon\",\n    color = \"Cylinders\"\n  ) +\n  theme_minimal() +  # Use a clean theme\n  theme(\n    plot.title = element_text(hjust = 0.5, face = \"bold\", size = 16),\n    axis.title = element_text(size = 12),\n    legend.position = \"top\"\n  )\n\n```\n:::\n\n\nHere is another way of looking at the data.\n\nHave a think what each of the plots are telling you, and the relative advantages of different plotting types. You can try others types as well. The code will reset when you refresh the website.\n\nUse the `ggplot` cheatsheet can help: https://posit.co/wp-content/uploads/2022/10/data-visualization-1.pdf\n\n\n::: {.cell}\n```{webr}\n# Convert cyl to a factor to treat it as categorical\nmtcars$cyl <- as.factor(mtcars$cyl)\n\nggplot(mtcars, aes(x = cyl, y = mpg, fill = cyl)) +\n  geom_boxplot(\n    width = 0.6, \n    outlier.color = \"red\", \n    outlier.shape = 16, \n    outlier.size = 2\n  ) +\n  # Use a gentle color palette or customize your own\n  scale_fill_manual(values = c(\"lightpink\", \"lightgreen\", \"lightblue\")) +\n  labs(\n    title = \"Boxplot of Miles Per Gallon by Number of Cylinders\",\n    subtitle = \"Using the mtcars dataset\",\n    x = \"Number of Cylinders\",\n    y = \"Miles Per Gallon (mpg)\"\n  ) +\n  # Remove the legend since the x-axis already implies cylinder groupings\n  theme_minimal(base_size = 14) +\n  theme(\n    legend.position = \"none\",\n    plot.title = element_text(face = \"bold\"),\n    plot.subtitle = element_text(face = \"italic\", margin = margin(b = 10)),\n    axis.title.x = element_text(margin = margin(t = 10)),\n    axis.title.y = element_text(margin = margin(r = 10))\n  )\n\n```\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

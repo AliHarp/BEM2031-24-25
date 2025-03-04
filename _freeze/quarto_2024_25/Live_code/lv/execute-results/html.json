@@ -1,0 +1,15 @@
+{
+  "hash": "24989017ca49e60d267888b686d308f7",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Week 2 practice\nformat: live-html\nengine: knitr\nwebr:\n  packages:\n    - stringdist\n---\n\n## Introducing distance and similarity\n\n::: {.cell}\n\n:::\n\n\n\nIn **Week 2 Workshop** we had a go at merging datasets using fuzzy matching, from Chunk 43 onward.\n\nWe used the Levenshtein distance to calculate the distance between some strings, and set a maximum distance on which to match the column data in each of the two datasets we would like to merge.\n\nLets have a look at how the Levenshtein (lv) distance works.\n\nWe need the library `stringdist` which I have installed for you.\n\nWe can define our strings:\n\n\n::: {.cell}\n```{webr}\nstring1 <- \"kitten\"\nstring2 <- \"sitting\"\n```\n:::\n\n\nCalculate the Levenshtein distance\n\n\n::: {.cell}\n```{webr}\nlv <- stringdist(string1, string2, method=\"lv\")\n```\n:::\n\n\nPrint the result\n\n\n::: {.cell}\n```{webr}\nprint(paste(\"Levenshtein distance between\", string1, \"and\", string2, \"is:\", lv))\n```\n:::\n\n\nTry changing the strings!",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

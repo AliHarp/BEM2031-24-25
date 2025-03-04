@@ -1,0 +1,15 @@
+{
+  "hash": "5466b63b0f940b1e3dc7313df80a5abe",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: Week 1 practice\nformat: live-html\nengine: knitr\nwebr:\n  packages:\n    - tidyverse\n\n---\n::: {.cell}\n\n:::\n\n\n\nSome of the materials for **Week 1 Workshop** can be run live here. This provide an interactive playground to try out your code. \n\n::: {.callout-important}\nYou will still be expected to download the workshop files each week, and run them \nin the workshops. The aim of this interactive environment is get you started with coding in R, and improve your familiarity.  You are not expected to memorise any of the code syntax, the aim is to improve your confidence.\n:::\n\n\nThe `tidyverse` package has been loaded in this environment. It consists of many different packages. We will only be using ggplot2 here:\n\n* ggplot2 - charts and plots\n* dplyr - chaining data manipulation (filtering, mutation, reshaping)\n* tibble - for effective data tables\n* tidyr - helpful functions for cleaning data\n* readr - functions for reading and writing data\n* purrr - functional programming tools\n* stringr - for manipulating text and character strings\n* forcats - for dealing with categorical or ordinal data (factors)\n\nSummarise the data. The data `mtcars` is available in the base version of R. we can use the function `summary` to do this.\n\n\n::: {.cell}\n```{webr}\nsummary(mtcars)\n```\n:::\n\n\n# Including Plots\n\nYou can also embed plots, for example:\n\n\n::: {.cell}\n```{webr}\nggplot(mtcars, aes(x = disp, y = mpg)) +\n  geom_point()\n```\n:::\n\n\n## Your first plot\n\nLets look at a different dataset - the mpg dataset is included in R:\n\n\n::: {.cell}\n```{webr}\nmpg\n```\n:::\n\n\nCreate a simple plot:\n\n\n::: {.cell}\n```{webr}\nggplot(data = mpg) +\n  geom_point(mapping = aes(x = displ, y = hwy))\n```\n:::\n\n\n**EXERCISE:** Look at some summary statistics. What function will you use on the mpg data to do this?\n\n\n::: {.cell setup='true' exercise='ex_2'}\n```{webr}\n#| setup: true\n#| exercise: ex_2\n```\n:::\n\n::: {.cell exercise='ex_2'}\n```{webr}\n#| exercise: ex_2\n\n```\n:::\n\n\n\nPlot using colour by `cty`:\n\n\n::: {.cell}\n```{webr}\nggplot(data = mpg) +\n  geom_point(mapping = aes(x = displ, y = hwy, color = cty))\n```\n:::\n\n\n**EXERCISE:** Color the points by the `class` variable.\n\n\n::: {.cell setup='true' exercise='ex_1'}\n```{webr}\n#| setup: true\n#| exercise: ex_1\n```\n:::\n\n::: {.cell exercise='ex_1'}\n```{webr}\n#| exercise: ex_1\n\n```\n:::\n\n::: { .hint exercise=\"ex_1\"}\n::: { .callout-note collapse=\"false\"}\n## Hint 1\n\nCopy and paste the previous code which colours by 'cty'. What change do you need to make?\n\n\n::: {.cell exercise='ex_3'}\n```{webr}\n#| exercise: ex_3\nggplot(data = mpg) +\n  geom_point(mapping = aes(x = displ, y = hwy, color = _______))\n```\n:::\n\n\n:::\n:::",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
