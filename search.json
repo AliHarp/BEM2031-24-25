@@ -72,11 +72,35 @@
     ]
   },
   {
-    "objectID": "quarto_2024_25/Live_code/week8.html#what-is-random",
-    "href": "quarto_2024_25/Live_code/week8.html#what-is-random",
+    "objectID": "quarto_2024_25/Live_code/week8.html#word-clouds",
+    "href": "quarto_2024_25/Live_code/week8.html#word-clouds",
     "title": "Week 8 practice",
-    "section": "What is random?",
-    "text": "What is random?\nA very simple way of analysing text is to count occurances of words. We see word clouds a lot! How useful are they?\n\n\n\n\n\n\nLoad in your ‘corpus’ or document",
+    "section": "Word Clouds",
+    "text": "Word Clouds\nA very simple way of analysing text is to count occurances of words. We see word clouds a lot! How useful are they?\nLook at the data cleaning steps required.\nFirst, load your data:\n\n\n\n\n\n\nLoad in your ‘corpus’ or document",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 8 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week8.html#is-this-more-useful",
+    "href": "quarto_2024_25/Live_code/week8.html#is-this-more-useful",
+    "title": "Week 8 practice",
+    "section": "Is this more useful?",
+    "text": "Is this more useful?",
+    "crumbs": [
+      "Welcome",
+      "Workshop interactive code",
+      "Week 8 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Live_code/week8.html#could-you-improve-it-further",
+    "href": "quarto_2024_25/Live_code/week8.html#could-you-improve-it-further",
+    "title": "Week 8 practice",
+    "section": "Could you improve it further?",
+    "text": "Could you improve it further?",
     "crumbs": [
       "Welcome",
       "Workshop interactive code",
