@@ -52,6 +52,7 @@ website:
           - quarto_2024_25/Weekly_seminars/S4.qmd
           - quarto_2024_25/Weekly_seminars/S5.qmd
           - quarto_2024_25/Weekly_seminars/S7.qmd
+          - quarto_2024_25/Weekly_seminars/S8.qmd
 
       - section: "Workshop interactive code"
         contents:
