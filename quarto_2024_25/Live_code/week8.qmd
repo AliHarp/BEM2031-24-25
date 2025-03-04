@@ -68,7 +68,6 @@ df <- data.frame(word = names(word_freqs), freq = word_freqs)
 # Set up the plot area with a white background
 par(bg = "white", mar = c(0,0,0,0))  # Set the margins to zero
 
-# Suppose 'df' is your data frame with columns 'word' and 'freq'
 wordcloud2(df,
            size = 1,
            minRotation = -pi/4,  # -45 degrees
@@ -80,14 +79,14 @@ wordcloud2(df,
 ## Is this more useful?
 
 ```{webr}
-#extract the top 15 words
-top_n <- 15
+#We'll just look at the top 15 words
+top_n <- 12
 df_top <- head(df, top_n)
 
 # Ensure it's sorted by frequency for a descending bar chart
 df_top <- df_top[order(df_top$freq, decreasing = TRUE), ]
 
-# Convert 'word' into a factor that respects this order
+# Convert 'word' into a factor
 df_top$word <- factor(df_top$word, levels = df_top$word)
 
 # Plot
@@ -99,7 +98,6 @@ ggplot(df_top, aes(x = word, y = freq)) +
        y = "Frequency") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
-
 
 ```
 
