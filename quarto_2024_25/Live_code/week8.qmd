@@ -4,8 +4,9 @@ format: live-html
 engine: knitr
 webr:
   packages:
-    - wordcloud
+    - wordcloud2
     - tm
+    - ggplot2
 ---
 ## Text analytics
 
@@ -13,63 +14,39 @@ webr:
 
 In **Week 8 Workshop** we are using text analytics and classification models to predict whether YouTube comments are HAM or SPAM.
 
-## What is random?
+## Word Clouds
 
 A very simple way of analysing text is to count occurances of words.
 We see word clouds a lot!
 How useful are they?
 
+Look at the data cleaning steps required.
+
+First, load your data:
+
 ::: {.callout-tip title="Load in your 'corpus' or document" collapse="true"}
 ```{webr}
-text <- c("Summative Assessment: Assignment 1 Deadline: 
-14 March 2025 Time: 15:00 hours
-Materials Provided. 
-
-In this assignment, you will apply and evaluate a random forest model to a 
-dataset containing information from a mailing campaign. Your task is to 
-develop a classification model to identify individuals most likely to donate 
-to the campaign, based on the features provided in the data. You will assess 
-the model's performance, evaluate its fit, and analyse how different features 
-contribute to its predictive accuracy.
-
-    You will be provided with a video stepping through a random forest in R, 
-    which is applied to a different dataset.
-    You will be provided with the mailing campaign dataset and an RMarkdown 
-    file to work with and adapt the code provided in the video.
-
-Objectives
-On completion of this assessment, you will:
-
-    Derive and evaluate information toward a specific challenge
-    Use data visualisation to share content and insight
-    Interpret and understand the potential implications of your analysis
-
-Instructions
-
-    Log into ELE, navigate to the Assessments tile. 
-    Watch the Summative Assessment video
-    Download the folder containing your data and RMarkdown file.
-    Recreate the code from the video using your own dataset. I encourage you 
-    to work in groups of 2-3 for this if you are inexperienced with coding.  
-    Ideally, you need to get all of the code running.
-    Spend some time interpreting the outputs of your code.
-    Interpret and consider the possible implications of the outcomes.  Your 
-    analysis needs to be individual work.
-    Complete the RMarkdown file with your individual interpretations, and knit 
-    it to pdf and/or html to produce a fully rendered report. You will submit 
-    a single rendered report via ELE.
-
-Advice for success
-
-    Participate actively in all workshop sessions, and try to understand what 
-    the code is doing and why. Attend lectures, engage with materials on ELE.
-    Work effectively with your peers to debug and troubleshoot code
-    Ensure your rendered report is clear, organised, and proof-read.
-    Talk to the module convenor if you feel stuck.")
+text <- c("To understand what business analytics is, 
+it’s also important to distinguish it from data science. 
+While both processes analyze data to solve business problems, 
+the difference between business analytics and data science lies
+in how data is used. Business analytics is concerned with 
+extracting meaningful insights from and visualizing data to 
+facilitate the decision-making process, whereas data science 
+is focused on making sense of raw data using algorithms, 
+statistical models, and computer programming. Despite their 
+differences, both business analytics and data science glean 
+insights from data to inform business decisions. To better 
+understand how data insights can drive organizational performance,
+here are some of the ways firms have benefitted from using 
+business analytics.")
 ```
 :::
 
 ```{webr}
+
+# Turn off warnings
+options(warn = -1)
 # Create a text corpus
 corpus <- Corpus(VectorSource(text))
 
@@ -78,6 +55,7 @@ corpus <- tm_map(corpus, content_transformer(tolower))
 corpus <- tm_map(corpus, removePunctuation)
 corpus <- tm_map(corpus, removeNumbers)
 corpus <- tm_map(corpus, stripWhitespace)
+corpus <- tm_map(corpus, removeWords, stopwords("english"))
 
 # Create a term-document matrix
 tdm <- TermDocumentMatrix(corpus)
@@ -87,11 +65,42 @@ m <- as.matrix(tdm)
 word_freqs <- sort(rowSums(m), decreasing = TRUE) 
 df <- data.frame(word = names(word_freqs), freq = word_freqs)
 
-# Plot the word cloud
-wordcloud(words = df$word, freq = df$freq, min.freq = 1,
-          max.words=200, random.order=FALSE, rot.per=0.35, 
-          colors=brewer.pal(8, "Dark2"),
-          scale = c(7,0.5))
+# Set up the plot area with a white background
+par(bg = "white", mar = c(0,0,0,0))  # Set the margins to zero
+
+# Suppose 'df' is your data frame with columns 'word' and 'freq'
+wordcloud2(df,
+           size = 1,
+           minRotation = -pi/4,  # -45 degrees
+           maxRotation = pi/4,   # +45 degrees
+           rotateRatio = 0.5)    # 50% of words get rotated within this range
 
 ```
 
+## Is this more useful?
+
+```{webr}
+#extract the top 15 words
+top_n <- 15
+df_top <- head(df, top_n)
+
+# Ensure it's sorted by frequency for a descending bar chart
+df_top <- df_top[order(df_top$freq, decreasing = TRUE), ]
+
+# Convert 'word' into a factor that respects this order
+df_top$word <- factor(df_top$word, levels = df_top$word)
+
+# Plot
+ggplot(df_top, aes(x = word, y = freq)) +
+  geom_bar(stat = "identity", fill="springgreen3") +
+  coord_flip() +  # Rotate so words read nicely (optional)
+  labs(title = "Top 15 Words",
+       x = "Word",
+       y = "Frequency") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 0, hjust = 0.5))
+
+
+```
+
+## Could you improve it further?
