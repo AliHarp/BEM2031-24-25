@@ -494,11 +494,23 @@
     "href": "quarto_2024_25/Live_code/week8.html#could-you-improve-it-further",
     "title": "Week 8 practice",
     "section": "Could you improve it further?",
-    "text": "Could you improve it further?",
+    "text": "Could you improve it further?\nTry commenting out the line that removes stopwords",
     "crumbs": [
       "Welcome",
       "Workshop interactive code",
       "Week 8 practice"
+    ]
+  },
+  {
+    "objectID": "quarto_2024_25/Weekly_seminars/S9.html",
+    "href": "quarto_2024_25/Weekly_seminars/S9.html",
+    "title": "Week 9 Seminar",
+    "section": "",
+    "text": "Seminar 9 materials for 2024_2025: Regression models\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSeminar 9 materials for 2024_2025: Mailer benefits",
+    "crumbs": [
+      "Welcome",
+      "Workshop output files",
+      "Week 9 Seminar"
     ]
   }
 ]

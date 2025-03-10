@@ -1,0 +1,18 @@
+---
+title: "Week 9 Seminar"
+author: "Alison Harper"
+format: html
+editor: visual
+---
+
+::: {.callout-tip title="Seminar 9 materials for 2024_2025: Regression models" collapse="true"}
+<iframe width="100%" height="800" src="week_09_bike_share_prep.html">
+
+</iframe>
+:::
+
+::: {.callout-tip title="Seminar 9 materials for 2024_2025: Mailer benefits" collapse="true"}
+<iframe width="100%" height="800" src="week_09_mailing_expected_benefit.html">
+
+</iframe>
+:::

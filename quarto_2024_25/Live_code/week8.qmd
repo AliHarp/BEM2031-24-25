@@ -102,3 +102,4 @@ ggplot(df_top, aes(x = word, y = freq)) +
 ```
 
 ## Could you improve it further?
+Try commenting out the line that removes stopwords
